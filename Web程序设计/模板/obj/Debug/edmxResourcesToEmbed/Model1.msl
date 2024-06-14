@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ArticleModelStoreContainer" CdmEntityContainer="ArticleEntities">
+    <EntitySetMapping Name="Articles">
+      <EntityTypeMapping TypeName="ArticleModel.Articles">
+        <MappingFragment StoreEntitySet="Articles">
+          <ScalarProperty Name="ArticleID" ColumnName="ArticleID" />
+          <ScalarProperty Name="ArticleTitle" ColumnName="ArticleTitle" />
+          <ScalarProperty Name="ArticleContent" ColumnName="ArticleContent" />
+          <ScalarProperty Name="Author" ColumnName="Author" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="pl">
+      <EntityTypeMapping TypeName="ArticleModel.pl">
+        <MappingFragment StoreEntitySet="pl">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="conten" ColumnName="conten" />
+          <ScalarProperty Name="author" ColumnName="author" />
+          <ScalarProperty Name="articleid" ColumnName="articleid" />
+          <ScalarProperty Name="sj" ColumnName="sj" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="User">
+      <EntityTypeMapping TypeName="ArticleModel.User">
+        <MappingFragment StoreEntitySet="User">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="psw" ColumnName="psw" />
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="score" ColumnName="score" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,738 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BB0F6B3B-8A80-40D0-9AB3-9D037A0EB9EE}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>模板</RootNamespace>
+    <AssemblyName>模板</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="articleEditor.html" />
+    <Content Include="articleEditor.js" />
+    <Content Include="articleInfo.html" />
+    <Content Include="articleInfo.js" />
+    <Content Include="articleList.html" />
+    <Content Include="articleList.js" />
+    <Content Include="articleNew.html" />
+    <Content Include="articleNew.js" />
+    <Content Include="bin\模板.dll" />
+    <Content Include="bin\模板.pdb" />
+    <Content Include="dd\css\bootstrap-rtl.min.css" />
+    <Content Include="dd\css\bootstrap.min.css" />
+    <Content Include="dd\css\bootstrap.min1.css" />
+    <Content Include="dd\css\css.css" />
+    <Content Include="dd\css\css1.css" />
+    <Content Include="dd\css\flaticon.css" />
+    <Content Include="dd\css\fontawesome-all.min.css" />
+    <Content Include="dd\css\fontawesome-all.min1.css" />
+    <Content Include="dd\css\fontawesome-all.min2.css" />
+    <Content Include="dd\css\star-animation.css" />
+    <Content Include="dd\css\star-animation1.css" />
+    <Content Include="dd\css\style.css" />
+    <Content Include="dd\css\style1.css" />
+    <Content Include="dd\css\style2.css" />
+    <Content Include="dd\css\vegas.min.css" />
+    <Content Include="dd\css\vegas.min1.css" />
+    <Content Include="dd\image\banner.png" />
+    <Content Include="dd\image\bg33-1.jpg" />
+    <Content Include="dd\js\bootstrap.min.js" />
+    <Content Include="dd\js\bootstrap.min1.js" />
+    <Content Include="dd\js\imagesloaded.pkgd.min.js" />
+    <Content Include="dd\js\imagesloaded.pkgd.min1.js" />
+    <Content Include="dd\js\isotope.pkgd.min.js" />
+    <Content Include="dd\js\jquery-3.3.1.min.js" />
+    <Content Include="dd\js\jquery-3.5.0.min.js" />
+    <Content Include="dd\js\jquery-3.5.0.min1.js" />
+    <Content Include="dd\js\jquery.mb.YTPlayer.min.js" />
+    <Content Include="dd\js\jquery.mb.YTPlayer.min1.js" />
+    <Content Include="dd\js\main.js" />
+    <Content Include="dd\js\main1.js" />
+    <Content Include="dd\js\pace.min.js" />
+    <Content Include="dd\js\particles-1.js" />
+    <Content Include="dd\js\particles-11.js" />
+    <Content Include="dd\js\particles-2.js" />
+    <Content Include="dd\js\particles-21.js" />
+    <Content Include="dd\js\particles-3.js" />
+    <Content Include="dd\js\particles-31.js" />
+    <Content Include="dd\js\particles.min.js" />
+    <Content Include="dd\js\particles.min1.js" />
+    <Content Include="dd\js\popper.min.js" />
+    <Content Include="dd\js\star-animation.js" />
+    <Content Include="dd\js\star-animation1.js" />
+    <Content Include="dd\js\starfield.js" />
+    <Content Include="dd\js\starfield1.js" />
+    <Content Include="dd\js\validator.min.js" />
+    <Content Include="dd\js\validator.min1.js" />
+    <Content Include="dd\js\vegas.min.js" />
+    <Content Include="dd\js\vegas.min1.js" />
+    <Content Include="dd\picture\bg34-1.png" />
+    <Content Include="dd\picture\bg34-11.png" />
+    <Content Include="dd\picture\demo1.jpg" />
+    <Content Include="dd\picture\demo10.jpg" />
+    <Content Include="dd\picture\demo11.jpg" />
+    <Content Include="dd\picture\demo12.jpg" />
+    <Content Include="dd\picture\demo13.jpg" />
+    <Content Include="dd\picture\demo14.jpg" />
+    <Content Include="dd\picture\demo15.jpg" />
+    <Content Include="dd\picture\demo16.jpg" />
+    <Content Include="dd\picture\demo17.jpg" />
+    <Content Include="dd\picture\demo18.jpg" />
+    <Content Include="dd\picture\demo19.jpg" />
+    <Content Include="dd\picture\demo2.jpg" />
+    <Content Include="dd\picture\demo20.jpg" />
+    <Content Include="dd\picture\demo21.jpg" />
+    <Content Include="dd\picture\demo22.jpg" />
+    <Content Include="dd\picture\demo23.jpg" />
+    <Content Include="dd\picture\demo24.jpg" />
+    <Content Include="dd\picture\demo25.jpg" />
+    <Content Include="dd\picture\demo26.jpg" />
+    <Content Include="dd\picture\demo27.jpg" />
+    <Content Include="dd\picture\demo28.jpg" />
+    <Content Include="dd\picture\demo29.jpg" />
+    <Content Include="dd\picture\demo3.jpg" />
+    <Content Include="dd\picture\demo30.jpg" />
+    <Content Include="dd\picture\demo31.jpg" />
+    <Content Include="dd\picture\demo32.jpg" />
+    <Content Include="dd\picture\demo33.jpg" />
+    <Content Include="dd\picture\demo34.jpg" />
+    <Content Include="dd\picture\demo4.jpg" />
+    <Content Include="dd\picture\demo5.jpg" />
+    <Content Include="dd\picture\demo6.jpg" />
+    <Content Include="dd\picture\demo7.jpg" />
+    <Content Include="dd\picture\demo8.jpg" />
+    <Content Include="dd\picture\demo9.jpg" />
+    <Content Include="dd\picture\logo-1.png" />
+    <Content Include="dd\picture\logo-10.png" />
+    <Content Include="dd\picture\logo-11.png" />
+    <Content Include="dd\picture\logo-12.png" />
+    <Content Include="dd\picture\logo-13.png" />
+    <Content Include="dd\picture\logo-14.png" />
+    <Content Include="dd\picture\logo-15.png" />
+    <Content Include="dd\picture\logo-16.png" />
+    <Content Include="dd\picture\logo-17.png" />
+    <Content Include="dd\picture\logo-18.png" />
+    <Content Include="dd\picture\logo-19.png" />
+    <Content Include="dd\picture\logo-191.png" />
+    <Content Include="dd\picture\logo-2.png" />
+    <Content Include="dd\picture\logo-20.png" />
+    <Content Include="dd\picture\logo-201.png" />
+    <Content Include="dd\picture\logo-3.png" />
+    <Content Include="dd\picture\logo-31.png" />
+    <Content Include="dd\picture\logo-32.png" />
+    <Content Include="dd\picture\logo-33.png" />
+    <Content Include="dd\picture\logo-34.png" />
+    <Content Include="dd\picture\logo-4.png" />
+    <Content Include="dd\picture\logo-41.png" />
+    <Content Include="dd\picture\logo-5.png" />
+    <Content Include="dd\picture\logo-6.png" />
+    <Content Include="dd\picture\logo-7.png" />
+    <Content Include="dd\picture\logo-8.png" />
+    <Content Include="dd\picture\logo-9.png" />
+    <Content Include="dd\picture\logo.png" />
+    <Content Include="dd\picture\otp-icon-light.png" />
+    <Content Include="dd\picture\otp-icon.png" />
+    <Content Include="dd\picture\qr-forgot-password-34.png" />
+    <Content Include="dd\picture\qr-login-34.png" />
+    <Content Include="dd\picture\qr-otp-34.png" />
+    <Content Include="dd\picture\qr-register-34.png" />
+    <Content Include="dd\picture\shape1.png" />
+    <Content Include="dd\picture\shape11.png" />
+    <Content Include="home.html" />
+    <Content Include="home.js" />
+    <Content Include="HTMLPage1.htm" />
+    <Content Include="login.html" />
+    <Content Include="login.js" />
+    <Content Include="obj\Debug\模板.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\模板.dll" />
+    <Content Include="obj\Debug\模板.pdb" />
+    <Content Include="script\jquery-1.4.1-vsdoc.js" />
+    <Content Include="script\jquery-1.4.1.js" />
+    <Content Include="script\jquery-1.4.1.min.js" />
+    <Content Include="script\jquery-ui-1.8.6.custom.min.js" />
+    <Content Include="script\jquery.json-2.3.js" />
+    <Content Include="server.aspx" />
+    <Content Include="static\css\aos.css" />
+    <Content Include="static\css\aos1.css" />
+    <Content Include="static\css\bootstrap-icons.css" />
+    <Content Include="static\css\bootstrap.min.css" />
+    <Content Include="static\css\bootstrap.min1.css" />
+    <Content Include="static\css\bootstrap.min2.css" />
+    <Content Include="static\css\bootstrap.min3.css" />
+    <Content Include="static\css\bundle.min.css" />
+    <Content Include="static\css\cf.errors.css" />
+    <Content Include="static\css\css.css" />
+    <Content Include="static\css\css1.css" />
+    <Content Include="static\css\css2.css" />
+    <Content Include="static\css\css21.css" />
+    <Content Include="static\css\css22.css" />
+    <Content Include="static\css\css23.css" />
+    <Content Include="static\css\css24.css" />
+    <Content Include="static\css\css25.css" />
+    <Content Include="static\css\cubeportfolio.min.css" />
+    <Content Include="static\css\custom.css" />
+    <Content Include="static\css\flaticon.css" />
+    <Content Include="static\css\flaticon1.css" />
+    <Content Include="static\css\flaticon2.css" />
+    <Content Include="static\css\flaticon3.css" />
+    <Content Include="static\css\flaticon4.css" />
+    <Content Include="static\css\flaticon5.css" />
+    <Content Include="static\css\flaticon6.css" />
+    <Content Include="static\css\flatpickr.min.css" />
+    <Content Include="static\css\glightbox.min.css" />
+    <Content Include="static\css\jquery.fancybox.min.css" />
+    <Content Include="static\css\LineIcons.min.css" />
+    <Content Include="static\css\megamenu.css" />
+    <Content Include="static\css\nouislider.min.css" />
+    <Content Include="static\css\owl.carousel.min.css" />
+    <Content Include="static\css\owl.theme.default.min.css" />
+    <Content Include="static\css\range-slider.css" />
+    <Content Include="static\css\range-slider1.css" />
+    <Content Include="static\css\settings.css" />
+    <Content Include="static\css\style.css" />
+    <Content Include="static\css\style.min.css" />
+    <Content Include="static\css\style1.css" />
+    <Content Include="static\css\style10.css" />
+    <Content Include="static\css\style2.css" />
+    <Content Include="static\css\style3.css" />
+    <Content Include="static\css\style4.css" />
+    <Content Include="static\css\style5.css" />
+    <Content Include="static\css\style6.css" />
+    <Content Include="static\css\style7.css" />
+    <Content Include="static\css\style8.css" />
+    <Content Include="static\css\style9.css" />
+    <Content Include="static\css\styles.css" />
+    <Content Include="static\css\swiper.min.css" />
+    <Content Include="static\css\tiny-slider.css" />
+    <Content Include="static\css\tiny-slider1.css" />
+    <Content Include="static\css\wow.css" />
+    <Content Include="static\file\book-1-1.jpg" />
+    <Content Include="static\file\book-1-2.jpg" />
+    <Content Include="static\file\book-1.jpg" />
+    <Content Include="static\file\book-2-1.jpg" />
+    <Content Include="static\file\book-2.jpg" />
+    <Content Include="static\file\book-3-1.jpg" />
+    <Content Include="static\file\book-3.jpg" />
+    <Content Include="static\file\book-4-1.jpg" />
+    <Content Include="static\file\book-4.jpg" />
+    <Content Include="static\file\book-5-1.jpg" />
+    <Content Include="static\file\book-5.jpg" />
+    <Content Include="static\file\book-6-1.jpg" />
+    <Content Include="static\file\book-6.jpg" />
+    <Content Include="static\file\img_h_1.jpg" />
+    <Content Include="static\file\img_h_2.jpg" />
+    <Content Include="static\file\img_h_3.jpg" />
+    <Content Include="static\file\img_h_4.jpg" />
+    <Content Include="static\file\img_h_5.jpg" />
+    <Content Include="static\file\img_h_6.jpg" />
+    <Content Include="static\file\img_h_8.jpg" />
+    <Content Include="static\file\img_v_1.jpg" />
+    <Content Include="static\file\img_v_2.jpg" />
+    <Content Include="static\file\img_v_4.jpg" />
+    <Content Include="static\file\l1.jpg" />
+    <Content Include="static\file\l10.jpg" />
+    <Content Include="static\file\l11.jpg" />
+    <Content Include="static\file\l12.jpg" />
+    <Content Include="static\file\l7.jpg" />
+    <Content Include="static\file\l8.jpg" />
+    <Content Include="static\file\l9.jpg" />
+    <Content Include="static\image\banner.jpg" />
+    <Content Include="static\image\banner1.1.jpg" />
+    <Content Include="static\image\banner1.2.jpg" />
+    <Content Include="static\image\banner1.3.jpg" />
+    <Content Include="static\image\browser-bar.png" />
+    <Content Include="static\image\cbp-sprite.png" />
+    <Content Include="static\image\cf-icon-browser.png" />
+    <Content Include="static\image\cf-icon-cloud.png" />
+    <Content Include="static\image\cf-icon-error.png" />
+    <Content Include="static\image\cf-icon-horizontal-arrow.png" />
+    <Content Include="static\image\cf-icon-ok.png" />
+    <Content Include="static\image\cf-icon-server.png" />
+    <Content Include="static\image\cf-no-screenshot-error.png" />
+    <Content Include="static\image\cf-no-screenshot-warn.png" />
+    <Content Include="static\image\dots.png" />
+    <Content Include="static\image\dots1.png" />
+    <Content Include="static\image\hero_2.jpg" />
+    <Content Include="static\image\hero_bg_1.jpg" />
+    <Content Include="static\image\icon-exclamation.png" />
+    <Content Include="static\image\img-2.jpg" />
+    <Content Include="static\image\img_3_sq.jpg" />
+    <Content Include="static\image\img_h_7.jpg" />
+    <Content Include="static\image\slider-bg-2.jpg" />
+    <Content Include="static\js\aos.js" />
+    <Content Include="static\js\aos1.js" />
+    <Content Include="static\js\bootstrap-input-spinner.js" />
+    <Content Include="static\js\bootstrap.bundle.min.js" />
+    <Content Include="static\js\bootstrap.bundle.min1.js" />
+    <Content Include="static\js\bootstrap.min.js" />
+    <Content Include="static\js\bootstrap.min1.js" />
+    <Content Include="static\js\bundle.min.js" />
+    <Content Include="static\js\circle-progress.js" />
+    <Content Include="static\js\contact_us.js" />
+    <Content Include="static\js\counter.js" />
+    <Content Include="static\js\custom.js" />
+    <Content Include="static\js\custom1.js" />
+    <Content Include="static\js\custom2.js" />
+    <Content Include="static\js\custom3.js" />
+    <Content Include="static\js\custom4.js" />
+    <Content Include="static\js\custom5.js" />
+    <Content Include="static\js\custom6.js" />
+    <Content Include="static\js\custom7.js" />
+    <Content Include="static\js\download.js" />
+    <Content Include="static\js\email-decode.min.js" />
+    <Content Include="static\js\flatpickr.js" />
+    <Content Include="static\js\flatpickr.min.js" />
+    <Content Include="static\js\glightbox.min.js" />
+    <Content Include="static\js\imagesloaded.pkgd.js" />
+    <Content Include="static\js\index.js" />
+    <Content Include="static\js\index1.js" />
+    <Content Include="static\js\isotope.pkgd.min.js" />
+    <Content Include="static\js\isotope.pkgd.min1.js" />
+    <Content Include="static\js\jquery-3.3.1.min.js" />
+    <Content Include="static\js\jquery-3.4.1.min.js" />
+    <Content Include="static\js\jquery-migrate-3.0.1.min.js" />
+    <Content Include="static\js\jquery-migrate.min.js" />
+    <Content Include="static\js\jquery.ajaxchimp.js" />
+    <Content Include="static\js\jquery.animateNumber.min.js" />
+    <Content Include="static\js\jquery.cubeportfolio.min.js" />
+    <Content Include="static\js\jquery.easing.1.3.js" />
+    <Content Include="static\js\jquery.fancybox.min.js" />
+    <Content Include="static\js\jquery.min.js" />
+    <Content Include="static\js\jquery.sticky.js" />
+    <Content Include="static\js\jquery.themepunch.revolution.min.js" />
+    <Content Include="static\js\jquery.themepunch.tools.min.js" />
+    <Content Include="static\js\jquery.waypoints.min.js" />
+    <Content Include="static\js\js.js" />
+    <Content Include="static\js\lozad.js" />
+    <Content Include="static\js\mailchimp.js" />
+    <Content Include="static\js\main.js" />
+    <Content Include="static\js\map.js" />
+    <Content Include="static\js\navbar.js" />
+    <Content Include="static\js\navbar1.js" />
+    <Content Include="static\js\nouislider.min.js" />
+    <Content Include="static\js\owl.carousel.min.js" />
+    <Content Include="static\js\parallaxie.min.js" />
+    <Content Include="static\js\popper.min.js" />
+    <Content Include="static\js\regenerator-runtime.min.js" />
+    <Content Include="static\js\rellax.js" />
+    <Content Include="static\js\revolution.extension.actions.min.js" />
+    <Content Include="static\js\revolution.extension.carousel.min.js" />
+    <Content Include="static\js\revolution.extension.kenburn.min.js" />
+    <Content Include="static\js\revolution.extension.layeranimation.min.js" />
+    <Content Include="static\js\revolution.extension.migration.min.js" />
+    <Content Include="static\js\revolution.extension.parallax.min.js" />
+    <Content Include="static\js\revolution.extension.slideanims.min.js" />
+    <Content Include="static\js\revolution.extension.video.min.js" />
+    <Content Include="static\js\rocket-loader.min.js" />
+    <Content Include="static\js\script.js" />
+    <Content Include="static\js\scrollmagic.animation.gsap.min.js" />
+    <Content Include="static\js\ScrollMagic.min.js" />
+    <Content Include="static\js\stickyfill.min.js" />
+    <Content Include="static\js\swiper.min.js" />
+    <Content Include="static\js\tiny-slider.js" />
+    <Content Include="static\js\TweenMax.min.js" />
+    <Content Include="static\js\wave-animate.js" />
+    <Content Include="static\js\wow.min.js" />
+    <Content Include="static\js\wp-polyfill.min.js" />
+    <Content Include="static\picture\01.svg" />
+    <Content Include="static\picture\02.svg" />
+    <Content Include="static\picture\03.svg" />
+    <Content Include="static\picture\04.svg" />
+    <Content Include="static\picture\advertisement.jpg" />
+    <Content Include="static\picture\author1.jpg" />
+    <Content Include="static\picture\author2.jpg" />
+    <Content Include="static\picture\author3.jpg" />
+    <Content Include="static\picture\author4.jpg" />
+    <Content Include="static\picture\blob.svg" />
+    <Content Include="static\picture\book-1-1.jpg" />
+    <Content Include="static\picture\book-1-2.jpg" />
+    <Content Include="static\picture\book-1.jpg" />
+    <Content Include="static\picture\book-2-1.jpg" />
+    <Content Include="static\picture\book-2.jpg" />
+    <Content Include="static\picture\book-3-1.jpg" />
+    <Content Include="static\picture\book-3.jpg" />
+    <Content Include="static\picture\book-4-1.jpg" />
+    <Content Include="static\picture\book-4.jpg" />
+    <Content Include="static\picture\book-5-1.jpg" />
+    <Content Include="static\picture\book-5.jpg" />
+    <Content Include="static\picture\book-6-1.jpg" />
+    <Content Include="static\picture\book-6.jpg" />
+    <Content Include="static\picture\featured-product.jpg" />
+    <Content Include="static\picture\img_h_1.jpg" />
+    <Content Include="static\picture\img_h_2.jpg" />
+    <Content Include="static\picture\img_h_3.jpg" />
+    <Content Include="static\picture\img_h_4.jpg" />
+    <Content Include="static\picture\img_h_5.jpg" />
+    <Content Include="static\picture\img_h_6.jpg" />
+    <Content Include="static\picture\img_h_7.jpg" />
+    <Content Include="static\picture\img_h_8.jpg" />
+    <Content Include="static\picture\img_v_1.jpg" />
+    <Content Include="static\picture\img_v_2.jpg" />
+    <Content Include="static\picture\img_v_4.jpg" />
+    <Content Include="static\picture\l1.jpg" />
+    <Content Include="static\picture\l10.jpg" />
+    <Content Include="static\picture\l11.jpg" />
+    <Content Include="static\picture\l12.jpg" />
+    <Content Include="static\picture\l13.jpg" />
+    <Content Include="static\picture\l7.jpg" />
+    <Content Include="static\picture\l8.jpg" />
+    <Content Include="static\picture\l9.jpg" />
+    <Content Include="static\picture\logo.png" />
+    <Content Include="static\picture\person_1-min.jpg" />
+    <Content Include="static\picture\person_1.jpg" />
+    <Content Include="static\picture\person_11.jpg" />
+    <Content Include="static\picture\person_12.jpg" />
+    <Content Include="static\picture\person_2-min.jpg" />
+    <Content Include="static\picture\person_2.jpg" />
+    <Content Include="static\picture\person_21.jpg" />
+    <Content Include="static\picture\person_22.jpg" />
+    <Content Include="static\picture\person_3-min.jpg" />
+    <Content Include="static\picture\person_3.jpg" />
+    <Content Include="static\picture\person_31.jpg" />
+    <Content Include="static\picture\person_32.jpg" />
+    <Content Include="static\picture\person_4-min.jpg" />
+    <Content Include="static\picture\person_4.jpg" />
+    <Content Include="static\picture\person_41.jpg" />
+    <Content Include="static\picture\person_5.jpg" />
+    <Content Include="static\picture\person_51.jpg" />
+    <Content Include="static\picture\person_6.jpg" />
+    <Content Include="static\picture\service-icon-1.svg" />
+    <Content Include="static\picture\service-icon-4.svg" />
+    <Content Include="static\picture\service-icon-5.svg" />
+    <Content Include="static\picture\service-icon-6.svg" />
+    <Content Include="static\picture\service-icon-7.svg" />
+    <Content Include="static\picture\service-icon-8.svg" />
+    <Content Include="static\picture\shop1.jpg" />
+    <Content Include="static\picture\shop2.jpg" />
+    <Content Include="static\picture\shopcart-1.jpg" />
+    <Content Include="static\picture\shopcart-2.jpg" />
+    <Content Include="static\picture\svg-1.svg" />
+    <Content Include="static\picture\svg-2.svg" />
+    <Content Include="static\picture\svg-3.svg" />
+    <Content Include="static\picture\undraw_getting_coffee_re_f2do.svg" />
+    <Content Include="static\picture\user.jpg" />
+    <Content Include="static\picture\user2.jpg" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="zc.js" />
+    <Content Include="修改.js" />
+    <Content Include="ko.js" />
+    <Content Include="注册.html" />
+    <Content Include="评论判断用户登录.js" />
+    <Content Include="评论.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Model1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="server.aspx.cs">
+      <DependentUpon>server.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="server.aspx.designer.cs">
+      <DependentUpon>server.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="dd\font\fa-brands-400.eot" />
+    <None Include="dd\font\fa-brands-400.ttf" />
+    <None Include="dd\font\fa-brands-400.woff" />
+    <None Include="dd\font\fa-brands-400.woff2" />
+    <None Include="dd\font\fa-brands-4001.eot" />
+    <None Include="dd\font\fa-brands-4001.ttf" />
+    <None Include="dd\font\fa-brands-4001.woff" />
+    <None Include="dd\font\fa-brands-4001.woff2" />
+    <None Include="dd\font\fa-regular-400.eot" />
+    <None Include="dd\font\fa-regular-400.ttf" />
+    <None Include="dd\font\fa-regular-400.woff" />
+    <None Include="dd\font\fa-regular-400.woff2" />
+    <None Include="dd\font\fa-regular-4001.eot" />
+    <None Include="dd\font\fa-regular-4001.ttf" />
+    <None Include="dd\font\fa-regular-4001.woff" />
+    <None Include="dd\font\fa-regular-4001.woff2" />
+    <None Include="dd\font\fa-solid-900.eot" />
+    <None Include="dd\font\fa-solid-900.ttf" />
+    <None Include="dd\font\fa-solid-900.woff" />
+    <None Include="dd\font\fa-solid-900.woff2" />
+    <None Include="dd\font\fa-solid-9001.eot" />
+    <None Include="dd\font\fa-solid-9001.ttf" />
+    <None Include="dd\font\fa-solid-9001.woff" />
+    <None Include="dd\font\fa-solid-9001.woff2" />
+    <None Include="dd\font\Flaticon.eot" />
+    <None Include="dd\font\Flaticon.ttf" />
+    <None Include="dd\font\Flaticon.woff" />
+    <None Include="dd\font\Flaticon.woff2" />
+    <None Include="dd\font\KFOlCnqEu92Fr1MmEU9fABc4EsA.woff2" />
+    <None Include="dd\font\KFOlCnqEu92Fr1MmEU9fBBc4.woff2" />
+    <None Include="dd\font\KFOlCnqEu92Fr1MmEU9fBxc4EsA.woff2" />
+    <None Include="dd\font\KFOlCnqEu92Fr1MmEU9fCBc4EsA.woff2" />
+    <None Include="dd\font\KFOlCnqEu92Fr1MmEU9fChc4EsA.woff2" />
+    <None Include="dd\font\KFOlCnqEu92Fr1MmEU9fCRc4EsA.woff2" />
+    <None Include="dd\font\KFOlCnqEu92Fr1MmEU9fCxc4EsA.woff2" />
+    <None Include="dd\font\KFOlCnqEu92Fr1MmSU5fABc4EsA.woff2" />
+    <None Include="dd\font\KFOlCnqEu92Fr1MmSU5fBBc4.woff2" />
+    <None Include="dd\font\KFOlCnqEu92Fr1MmSU5fBxc4EsA.woff2" />
+    <None Include="dd\font\KFOlCnqEu92Fr1MmSU5fCBc4EsA.woff2" />
+    <None Include="dd\font\KFOlCnqEu92Fr1MmSU5fChc4EsA.woff2" />
+    <None Include="dd\font\KFOlCnqEu92Fr1MmSU5fCRc4EsA.woff2" />
+    <None Include="dd\font\KFOlCnqEu92Fr1MmSU5fCxc4EsA.woff2" />
+    <None Include="dd\font\KFOlCnqEu92Fr1MmWUlfABc4EsA.woff2" />
+    <None Include="dd\font\KFOlCnqEu92Fr1MmWUlfBBc4.woff2" />
+    <None Include="dd\font\KFOlCnqEu92Fr1MmWUlfBxc4EsA.woff2" />
+    <None Include="dd\font\KFOlCnqEu92Fr1MmWUlfCBc4EsA.woff2" />
+    <None Include="dd\font\KFOlCnqEu92Fr1MmWUlfChc4EsA.woff2" />
+    <None Include="dd\font\KFOlCnqEu92Fr1MmWUlfCRc4EsA.woff2" />
+    <None Include="dd\font\KFOlCnqEu92Fr1MmWUlfCxc4EsA.woff2" />
+    <None Include="dd\font\KFOmCnqEu92Fr1Mu4mxK.woff2" />
+    <None Include="dd\font\KFOmCnqEu92Fr1Mu4WxKOzY.woff2" />
+    <None Include="dd\font\KFOmCnqEu92Fr1Mu5mxKOzY.woff2" />
+    <None Include="dd\font\KFOmCnqEu92Fr1Mu72xKOzY.woff2" />
+    <None Include="dd\font\KFOmCnqEu92Fr1Mu7GxKOzY.woff2" />
+    <None Include="dd\font\KFOmCnqEu92Fr1Mu7mxKOzY.woff2" />
+    <None Include="dd\font\KFOmCnqEu92Fr1Mu7WxKOzY.woff2" />
+    <None Include="dd\font\QGY_z_wNahGAdqQ43RhVcIgYT2Xz5u32K0nXBi8Jow.ttf" />
+    <None Include="dd\font\Qw3aZQNVED7rKGKxtqIqX5EUA3x4RHw.woff2" />
+    <None Include="dd\font\Qw3aZQNVED7rKGKxtqIqX5EUAnx4RHw.woff2" />
+    <None Include="dd\font\Qw3aZQNVED7rKGKxtqIqX5EUDXx4.woff2" />
+    <EntityDeploy Include="Model1.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Model1.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="static\font\6xKtdSZaM9iE8KbpRA_hJFQNcOM.woff2" />
+    <None Include="static\font\6xKtdSZaM9iE8KbpRA_hJVQNcOM.woff2" />
+    <None Include="static\font\6xKtdSZaM9iE8KbpRA_hK1QN.woff2" />
+    <None Include="static\font\9oRONYoBnWILk-9AnC8zMw.woff2" />
+    <None Include="static\font\9oRONYoBnWILk-9AnCEzM-Py.woff2" />
+    <None Include="static\font\9oRONYoBnWILk-9AnCIzM-Py.woff2" />
+    <None Include="static\font\9oRONYoBnWILk-9AnCszM-Py.woff2" />
+    <None Include="static\font\bootstrap-icons.woff" />
+    <None Include="static\font\bootstrap-icons.woff2" />
+    <None Include="static\font\fa-brands-400.eot" />
+    <None Include="static\font\fa-brands-400.ttf" />
+    <None Include="static\font\fa-brands-400.woff" />
+    <None Include="static\font\fa-brands-400.woff2" />
+    <None Include="static\font\fa-regular-400.eot" />
+    <None Include="static\font\fa-regular-400.ttf" />
+    <None Include="static\font\fa-regular-400.woff" />
+    <None Include="static\font\fa-regular-400.woff2" />
+    <None Include="static\font\fa-solid-900.eot" />
+    <None Include="static\font\fa-solid-900.ttf" />
+    <None Include="static\font\fa-solid-900.woff" />
+    <None Include="static\font\fa-solid-900.woff2" />
+    <None Include="static\font\Flaticon.eot" />
+    <None Include="static\font\Flaticon.ttf" />
+    <None Include="static\font\Flaticon.woff" />
+    <None Include="static\font\Flaticon.woff2" />
+    <None Include="static\font\Flaticon1.eot" />
+    <None Include="static\font\Flaticon1.ttf" />
+    <None Include="static\font\Flaticon1.woff" />
+    <None Include="static\font\Flaticon1.woff2" />
+    <None Include="static\font\Flaticon2.eot" />
+    <None Include="static\font\Flaticon2.ttf" />
+    <None Include="static\font\Flaticon2.woff" />
+    <None Include="static\font\Flaticon2.woff2" />
+    <None Include="static\font\Flaticon3.eot" />
+    <None Include="static\font\Flaticon3.ttf" />
+    <None Include="static\font\Flaticon3.woff" />
+    <None Include="static\font\Flaticon3.woff2" />
+    <None Include="static\font\Flaticon4.eot" />
+    <None Include="static\font\Flaticon4.ttf" />
+    <None Include="static\font\Flaticon4.woff" />
+    <None Include="static\font\Flaticon4.woff2" />
+    <None Include="static\font\Flaticon5.eot" />
+    <None Include="static\font\Flaticon5.ttf" />
+    <None Include="static\font\Flaticon5.woff" />
+    <None Include="static\font\Flaticon5.woff2" />
+    <None Include="static\font\Flaticon6.eot" />
+    <None Include="static\font\Flaticon6.ttf" />
+    <None Include="static\font\Flaticon6.woff" />
+    <None Include="static\font\Flaticon6.woff2" />
+    <None Include="static\font\icomoon.eot" />
+    <None Include="static\font\icomoon.ttf" />
+    <None Include="static\font\icomoon.woff" />
+    <None Include="static\font\JTUSjIg1_i6t8kCHKm459W1hyzbi.woff2" />
+    <None Include="static\font\JTUSjIg1_i6t8kCHKm459Wdhyzbi.woff2" />
+    <None Include="static\font\JTUSjIg1_i6t8kCHKm459Wlhyw.woff2" />
+    <None Include="static\font\JTUSjIg1_i6t8kCHKm459WRhyzbi.woff2" />
+    <None Include="static\font\JTUSjIg1_i6t8kCHKm459WZhyzbi.woff2" />
+    <None Include="static\font\KFOlCnqEu92Fr1MmWUlfABc4EsA.woff2" />
+    <None Include="static\font\KFOlCnqEu92Fr1MmWUlfBBc4.woff2" />
+    <None Include="static\font\KFOlCnqEu92Fr1MmWUlfBxc4EsA.woff2" />
+    <None Include="static\font\KFOlCnqEu92Fr1MmWUlfCBc4EsA.woff2" />
+    <None Include="static\font\KFOlCnqEu92Fr1MmWUlfChc4EsA.woff2" />
+    <None Include="static\font\KFOlCnqEu92Fr1MmWUlfCRc4EsA.woff2" />
+    <None Include="static\font\KFOlCnqEu92Fr1MmWUlfCxc4EsA.woff2" />
+    <None Include="static\font\KFOlCnqEu92Fr1MmYUtfABc4EsA.woff2" />
+    <None Include="static\font\KFOlCnqEu92Fr1MmYUtfBBc4.woff2" />
+    <None Include="static\font\KFOlCnqEu92Fr1MmYUtfBxc4EsA.woff2" />
+    <None Include="static\font\KFOlCnqEu92Fr1MmYUtfCBc4EsA.woff2" />
+    <None Include="static\font\KFOlCnqEu92Fr1MmYUtfChc4EsA.woff2" />
+    <None Include="static\font\KFOlCnqEu92Fr1MmYUtfCRc4EsA.woff2" />
+    <None Include="static\font\KFOlCnqEu92Fr1MmYUtfCxc4EsA.woff2" />
+    <None Include="static\font\KFOmCnqEu92Fr1Mu4mxK.woff2" />
+    <None Include="static\font\KFOmCnqEu92Fr1Mu4WxKOzY.woff2" />
+    <None Include="static\font\KFOmCnqEu92Fr1Mu5mxKOzY.woff2" />
+    <None Include="static\font\KFOmCnqEu92Fr1Mu72xKOzY.woff2" />
+    <None Include="static\font\KFOmCnqEu92Fr1Mu7GxKOzY.woff2" />
+    <None Include="static\font\KFOmCnqEu92Fr1Mu7mxKOzY.woff2" />
+    <None Include="static\font\KFOmCnqEu92Fr1Mu7WxKOzY.woff2" />
+    <None Include="static\font\LineIcons.eot" />
+    <None Include="static\font\LineIcons.ttf" />
+    <None Include="static\font\LineIcons.woff" />
+    <None Include="static\font\memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-muw.woff2" />
+    <None Include="static\font\memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS2mu1aB.woff2" />
+    <None Include="static\font\memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSCmu1aB.woff2" />
+    <None Include="static\font\memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSGmu1aB.woff2" />
+    <None Include="static\font\memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSKmu1aB.woff2" />
+    <None Include="static\font\memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSOmu1aB.woff2" />
+    <None Include="static\font\memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSumu1aB.woff2" />
+    <None Include="static\font\memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSymu1aB.woff2" />
+    <None Include="static\font\MwQzbhXl3_qEpiwAIC5-oGAfiIlP.woff2" />
+    <None Include="static\font\MwQzbhXl3_qEpiwAIC5-oGofiIlP.woff2" />
+    <None Include="static\font\MwQzbhXl3_qEpiwAIC5-oGQfiA.woff2" />
+    <None Include="static\font\MwQzbhXl3_qEpiwAIC5-oGsfiIlP.woff2" />
+    <None Include="static\font\pe03MImSLYBIv1o4X1M8cc8-BM5gU1EQVg.woff2" />
+    <None Include="static\font\pe03MImSLYBIv1o4X1M8cc8-BM5iU1EQVg.woff2" />
+    <None Include="static\font\pe03MImSLYBIv1o4X1M8cc8-BM5jU1EQVg.woff2" />
+    <None Include="static\font\pe03MImSLYBIv1o4X1M8cc8-BM5pU1EQVg.woff2" />
+    <None Include="static\font\pe03MImSLYBIv1o4X1M8cc8-BM5tU1E.woff2" />
+    <None Include="static\font\pe03MImSLYBIv1o4X1M8cc8WAc5gU1EQVg.woff2" />
+    <None Include="static\font\pe03MImSLYBIv1o4X1M8cc8WAc5iU1EQVg.woff2" />
+    <None Include="static\font\pe03MImSLYBIv1o4X1M8cc8WAc5jU1EQVg.woff2" />
+    <None Include="static\font\pe03MImSLYBIv1o4X1M8cc8WAc5pU1EQVg.woff2" />
+    <None Include="static\font\pe03MImSLYBIv1o4X1M8cc8WAc5tU1E.woff2" />
+    <None Include="static\font\pe06MI6eKpdGqlF5LANrM--qAeRhe6D4yip43qfcERwst7uzobo.woff2" />
+    <None Include="static\font\pe06MI6eKpdGqlF5LANrM--qAeRhe6D4yip43qfcERwstbuzobo.woff2" />
+    <None Include="static\font\pe06MI6eKpdGqlF5LANrM--qAeRhe6D4yip43qfcERwstruzobo.woff2" />
+    <None Include="static\font\pe06MI6eKpdGqlF5LANrM--qAeRhe6D4yip43qfcERwsu7uzobo.woff2" />
+    <None Include="static\font\pe06MI6eKpdGqlF5LANrM--qAeRhe6D4yip43qfcERwsuLuz.woff2" />
+    <None Include="static\font\pe06MI6eKpdGqlF5LANrM--qAeRhe6D4yip43qfcERwsvLuzobo.woff2" />
+    <None Include="static\font\pe0pMI6eKpdGqlF5LANrM--qAP5vS1U.woff2" />
+    <None Include="static\font\pe0pMI6eKpdGqlF5LANrM--qBP5v.woff2" />
+    <None Include="static\font\pe0pMI6eKpdGqlF5LANrM--qB_5vS1U.woff2" />
+    <None Include="static\font\pe0pMI6eKpdGqlF5LANrM--qCf5vS1U.woff2" />
+    <None Include="static\font\pe0pMI6eKpdGqlF5LANrM--qCv5vS1U.woff2" />
+    <None Include="static\font\pe0pMI6eKpdGqlF5LANrM--qC_5vS1U.woff2" />
+    <None Include="static\font\pe0qMImSLYBIv1o4X1M8cce5I9tScg.woff2" />
+    <None Include="static\font\pe0qMImSLYBIv1o4X1M8cce9I9s.woff2" />
+    <None Include="static\font\pe0qMImSLYBIv1o4X1M8ccewI9tScg.woff2" />
+    <None Include="static\font\pe0qMImSLYBIv1o4X1M8cceyI9tScg.woff2" />
+    <None Include="static\font\pe0qMImSLYBIv1o4X1M8ccezI9tScg.woff2" />
+    <None Include="static\font\pxiByp8kv8JHgFVrLCz7Z11lFc-K.woff2" />
+    <None Include="static\font\pxiByp8kv8JHgFVrLCz7Z1JlFc-K.woff2" />
+    <None Include="static\font\pxiByp8kv8JHgFVrLCz7Z1xlFQ.woff2" />
+    <None Include="static\font\pxiByp8kv8JHgFVrLDD4Z11lFc-K.woff2" />
+    <None Include="static\font\pxiByp8kv8JHgFVrLDD4Z1JlFc-K.woff2" />
+    <None Include="static\font\pxiByp8kv8JHgFVrLDD4Z1xlFQ.woff2" />
+    <None Include="static\font\pxiByp8kv8JHgFVrLDz8Z11lFc-K.woff2" />
+    <None Include="static\font\pxiByp8kv8JHgFVrLDz8Z1JlFc-K.woff2" />
+    <None Include="static\font\pxiByp8kv8JHgFVrLDz8Z1xlFQ.woff2" />
+    <None Include="static\font\pxiByp8kv8JHgFVrLEj6Z11lFc-K.woff2" />
+    <None Include="static\font\pxiByp8kv8JHgFVrLEj6Z1JlFc-K.woff2" />
+    <None Include="static\font\pxiByp8kv8JHgFVrLEj6Z1xlFQ.woff2" />
+    <None Include="static\font\pxiByp8kv8JHgFVrLFj_Z11lFc-K.woff2" />
+    <None Include="static\font\pxiByp8kv8JHgFVrLFj_Z1JlFc-K.woff2" />
+    <None Include="static\font\pxiByp8kv8JHgFVrLFj_Z1xlFQ.woff2" />
+    <None Include="static\font\pxiByp8kv8JHgFVrLGT9Z11lFc-K.woff2" />
+    <None Include="static\font\pxiByp8kv8JHgFVrLGT9Z1JlFc-K.woff2" />
+    <None Include="static\font\pxiByp8kv8JHgFVrLGT9Z1xlFQ.woff2" />
+    <None Include="static\font\pxiEyp8kv8JHgFVrJJbecmNE.woff2" />
+    <None Include="static\font\pxiEyp8kv8JHgFVrJJfecg.woff2" />
+    <None Include="static\font\pxiEyp8kv8JHgFVrJJnecmNE.woff2" />
+    <None Include="static\font\QGYsz_wNahGAdqQ43Rh_c6Dpp_k.woff2" />
+    <None Include="static\font\QGYsz_wNahGAdqQ43Rh_cqDpp_k.woff2" />
+    <None Include="static\font\QGYsz_wNahGAdqQ43Rh_fKDp.woff2" />
+    <None Include="static\font\UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa0ZL7SUc.woff2" />
+    <None Include="static\font\UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1pL7SUc.woff2" />
+    <None Include="static\font\UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1ZL7.woff2" />
+    <None Include="static\font\UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa25L7SUc.woff2" />
+    <None Include="static\font\UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2JL7SUc.woff2" />
+    <None Include="static\font\UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2pL7SUc.woff2" />
+    <None Include="static\font\UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2ZL7SUc.woff2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="obj\Debug\TempPE\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>1046</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
